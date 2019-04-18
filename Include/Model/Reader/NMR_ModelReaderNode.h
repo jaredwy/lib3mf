@@ -65,6 +65,7 @@ namespace NMR {
 	public:
 		CModelReaderNode() = delete;
 		CModelReaderNode(_In_ PModelReaderWarnings pWarnings, _In_ CProgressMonitor* pProgressMonitor = nullptr);
+		virtual ~CModelReaderNode() = default;
 
 		std::string getName();
 		PModelReaderWarnings getWarnings();

@@ -43,6 +43,7 @@ namespace NMR {
 	public:
 		CModelWriter_STL() = delete;
 		CModelWriter_STL(_In_ PModel pModel);
+		virtual ~CModelWriter_STL();
 
 		virtual void exportToStream(_In_ PExportStream pStream);
 	};

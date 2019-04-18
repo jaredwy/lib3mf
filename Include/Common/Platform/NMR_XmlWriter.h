@@ -42,7 +42,8 @@ namespace NMR {
 		PExportStream m_pExportStream;
 	public:
 		CXmlWriter(_In_ PExportStream pExportStream);
-
+		virtual ~CXmlWriter() = default;
+		
 		virtual void WriteStartDocument() = 0;
 		virtual void WriteEndDocument() = 0;
 		virtual void Flush() = 0;

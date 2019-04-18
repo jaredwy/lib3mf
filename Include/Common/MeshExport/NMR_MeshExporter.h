@@ -50,7 +50,8 @@ namespace NMR {
 	public:
 		CMeshExporter();
 		CMeshExporter(_In_ PExportStream pStream);
-
+		virtual ~CMeshExporter() = default;
+		
 		void setStream(_In_ PExportStream pStream);
 		CExportStream * getStream();
 
